@@ -31,3 +31,4 @@
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/MK64F12_features.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\hal\inc\fsl_gpio_hal.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
