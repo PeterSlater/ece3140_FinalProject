@@ -6,4 +6,4 @@
 .\objects\fxos8700.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\fxos8700.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.0.0\Board\Board_Accelerometer.h
 .\objects\fxos8700.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.0.0\Board\Board_Magnetometer.h
-.\objects\fxos8700.o: C:\Users\Jonathan\Desktop\Final Project\RTE\RTE_Components.h
+.\objects\fxos8700.o: C:\Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE\RTE_Components.h

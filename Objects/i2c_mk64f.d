@@ -6,8 +6,8 @@
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\i2c_mk64f.o: C:\Users\Jonathan\Desktop\Final Project\RTE\Device\MK64FN1M0VLL12\RTE_Device.h
-.\objects\i2c_mk64f.o: C:\Users\Jonathan\Desktop\Final Project\RTE\RTE_Components.h
+.\objects\i2c_mk64f.o: C:\Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE\Device\MK64FN1M0VLL12\RTE_Device.h
+.\objects\i2c_mk64f.o: C:\Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE\RTE_Components.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\fsl_device_registers.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/MK64F12.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm4.h
@@ -15,7 +15,7 @@
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmSimd.h
-.\objects\i2c_mk64f.o: C:\Users\Jonathan\Desktop\Final Project\RTE\Device\MK64FN1M0VLL12\system_MK64F12.h
+.\objects\i2c_mk64f.o: C:\Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE\Device\MK64FN1M0VLL12\system_MK64F12.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/MK64F12_extension.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/MK64F12.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/fsl_bitaccess.h

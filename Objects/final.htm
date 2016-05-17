@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\final.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\final.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Mon May 16 19:46:27 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Mon May 16 20:12:01 2016
 <BR><P>
 <H3>Maximum Stack Usage =        248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -602,10 +602,10 @@ Global Symbols
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_PushSTCDToHTCD
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_ClaimChannel
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMAMUX_HAL_SetChannelCmd
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnableUartClock
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetNbytes
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetMajorCount
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetAttribute
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnableUartClock
 </UL>
 
 <P><STRONG><a name="[152]"></a>__assert</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, assert.o(.text), UNUSED)
@@ -797,10 +797,10 @@ Global Symbols
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetFllSrc
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetClkOutStat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetPbeMode
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetPbeMode
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbiMode
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbeMode
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
 </UL>
 
 <P><STRONG><a name="[bc]"></a>CLOCK_HAL_GetOutClk</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, fsl_mcg_hal.o(i.CLOCK_HAL_GetOutClk))
@@ -906,16 +906,16 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetInternalRefClkMode
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetInternalRefClkMode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbiMode
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbiMode
 </UL>
 
 <P><STRONG><a name="[c9]"></a>CLOCK_SYS_EnablePortClock</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, fsl_clock_mk64f12.o(i.CLOCK_SYS_EnablePortClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_EnablePortClock &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
 </UL>
@@ -924,8 +924,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_EnableUartClock &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Init
 </UL>
@@ -969,10 +969,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_OscInit &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetOscerConfigration
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSC_HAL_SetCapacitor
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOsc0Mode
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetOscerConfigration
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitOsc0
 </UL>
@@ -981,8 +981,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_RtcOscInit &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_HAL_SetOscillatorCmd
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_HAL_SetOscillatorCmd
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitRtcOsc
 </UL>
@@ -991,12 +991,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_SetConfiguration &rArr; CLOCK_SYS_SetMcgMode &rArr; CLOCK_HAL_SetPbeMode &rArr; CLOCK_HAL_GetMcgMode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetSimConfigration
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOutDiv
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetOscerConfigration
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetOscerConfigration
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetCoreClockFreq
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetSimConfigration
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOutDiv
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_ClockInit
 </UL>
@@ -1004,16 +1004,16 @@ Global Symbols
 <P><STRONG><a name="[d5]"></a>CLOCK_SYS_SetMcgMode</STRONG> (Thumb, 340 bytes, Stack size 40 bytes, fsl_clock_manager.o(i.CLOCK_SYS_SetMcgMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = CLOCK_SYS_SetMcgMode &rArr; CLOCK_HAL_SetPbeMode &rArr; CLOCK_HAL_GetMcgMode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetPbeMode
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgPeeToFbe
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetLowPowerModeCmd
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetClkOutSrc
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetClkOutStat
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetPbeMode
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbiMode
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbeMode
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgMode
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_UpdateFastClkInternalRefDiv
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_EnablePll0InFllMode
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgPeeToFbe
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetLowPowerModeCmd
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetClkOutSrc
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetClkOutStat
 </UL>
 <BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetConfiguration
 </UL>
@@ -1144,11 +1144,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 148 + Unknown Stack Size
 <LI>Call Chain = DbgConsole_Init &rArr; CLOCK_SYS_GetUartFreq &rArr; CLOCK_SYS_GetBusClockFreq &rArr; CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetUartFreq
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnableUartClock
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_HAL_SetParityMode
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_HAL_SetBaudRate
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetUartFreq
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnableUartClock
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
 </UL>
@@ -1236,10 +1236,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = EDMA_HAL_STCDSetBasicTransfer &rArr; EDMA_HAL_STCDSetAttribute &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetNbytes
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetNbytes
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetMajorCount
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetAttribute
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PrepareDescriptorTransfer
 </UL>
@@ -1321,8 +1321,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
 <LI>Call Chain = I2C_HAL_SendStop &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_GetStatusFlag
+<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_GetStatusFlag
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2Cx_IRQHandler
 <LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_PowerControl
@@ -1421,9 +1421,9 @@ Global Symbols
 <P><STRONG><a name="[124]"></a>_doprint</STRONG> (Thumb, 1380 bytes, Stack size 152 bytes, print_scan.o(i._doprint))
 <BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = _doprint &rArr; fput_pad
 </UL>
-<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mknumstr
+<BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mknumstr
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fput_pad
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_printf
 </UL>
@@ -1469,7 +1469,7 @@ Global Symbols
 <P><STRONG><a name="[9]"></a>init_data_bss</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, startup.o(i.init_data_bss))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mk64f12.o(.text)
 </UL>
-<P><STRONG><a name="[9b]"></a>main</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, main.o(i.main))
+<P><STRONG><a name="[9b]"></a>main</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248 + Unknown Stack Size
 <LI>Call Chain = main &rArr; debug_printf &rArr; _doprint &rArr; fput_pad
 </UL>

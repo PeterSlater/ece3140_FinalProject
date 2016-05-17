@@ -1063,20 +1063,20 @@ ARM Macro Assembler    Page 17
               00000000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
-erwork --depend=.\objects\startup_mk64f12.d -o.\objects\startup_mk64f12.o -I"C:
-\Users\Jonathan\Desktop\Final Project\RTE" -I"C:\Users\Jonathan\Desktop\Final P
-roject\RTE\Device\MK64FN1M0VLL12" -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\D
-river\Include -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include -IC:\Keil_v5\
-ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\examples\frdmk64f -IC:\Keil_v5\ARM\PACK\Kei
-l\Kinetis_SDK_DFP\2.2.0\platform\devices -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK
-_DFP\2.2.0\platform\drivers\inc -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.
-0\platform\hal\inc -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\os
-a\inc -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\system\inc -IC:
-\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\utilities\inc -IC:\Keil_v
-5\ARM\PACK\Keil\MDK-Middleware\7.0.0\Board --predefine="__EVAL SETA 1" --predef
-ine="__UVISION_VERSION SETA 517" --predefine="_RTE_ SETA 1" --predefine="CPU_MK
-64FN1M0VLL12 SETA 1" --list=.\listings\startup_mk64f12.lst RTE\Device\MK64FN1M0
-VLL12\startup_MK64F12.s
+erwork --depend=.\objects\startup_mk64f12.d -o.\objects\startup_mk64f12.o -IC:\
+Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE -IC:\Users\Jonathan\D
+esktop\FinalProj\ece3140_FinalProject\RTE\Device\MK64FN1M0VLL12 -IC:\Keil_v5\AR
+M\PACK\ARM\CMSIS\4.5.0\CMSIS\Driver\Include -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5
+.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\examples\frdm
+k64f -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices -IC:\Kei
+l_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\drivers\inc -IC:\Keil_v5\ARM\
+PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\hal\inc -IC:\Keil_v5\ARM\PACK\Keil\Kin
+etis_SDK_DFP\2.2.0\platform\osa\inc -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\
+2.2.0\platform\system\inc -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\plat
+form\utilities\inc -IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.0.0\Board --pred
+efine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 517" --predefine="_RT
+E_ SETA 1" --predefine="CPU_MK64FN1M0VLL12 SETA 1" --list=.\listings\startup_mk
+64f12.lst RTE\Device\MK64FN1M0VLL12\startup_MK64F12.s
 
 
 

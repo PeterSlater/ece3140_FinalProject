@@ -10,7 +10,7 @@
 .\objects\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Driver\Include\Driver_I2C.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Driver\Include\Driver_Common.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\main.o: C:\Users\Jonathan\Desktop\Final Project\RTE\RTE_Components.h
+.\objects\main.o: C:\Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE\RTE_Components.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\examples\frdmk64f\board.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\examples\frdmk64f\pin_mux.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\examples\frdmk64f\gpio_pins.h
@@ -24,7 +24,7 @@
 .\objects\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmSimd.h
-.\objects\main.o: C:\Users\Jonathan\Desktop\Final Project\RTE\Device\MK64FN1M0VLL12\system_MK64F12.h
+.\objects\main.o: C:\Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE\Device\MK64FN1M0VLL12\system_MK64F12.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/MK64F12_extension.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/MK64F12.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/fsl_bitaccess.h
