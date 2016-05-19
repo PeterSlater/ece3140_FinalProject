@@ -1,4 +1,5 @@
 #include "MK64F12.h"
+#include "buttons.h"
 
 /* SW2 = PTC6*/
 
@@ -22,8 +23,3 @@ int btn_SW2_state(void){
 	
 	return PRESSED;
 }
-	
-
-/* Setup and register function isr as ISR for SW2 */
-void btn_SW2_register_ISR(void *(isr)(void)){}
-	

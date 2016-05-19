@@ -1,4 +1,5 @@
 #include "MK64F12.h"
+#include "LEDS.h"
 
 /* Initialized LED related hardware */
 void LED_initialize(void) {

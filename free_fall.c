@@ -7,11 +7,14 @@
 #include "MK64F12.h"
 #include "free_fall.h"
 
-/* Expirementally determined free fall detection threshold */
+/* Expirementally determined free fall and motion detection thresholds */
 #define FREE_FALL_THRESHOLD 350
+#define MOTION_THRESHOLD 150
 
+/* Constants used to intrepret return values */
 const int YES = 1;
 const int NO = 0;
+const int FALL_TIME = 1000;
 
 static ACCELEROMETER_STATE state;
 static MAGNETOMETER_STATE mstate;
@@ -27,7 +30,18 @@ void ff_initialize(void){
 int ff_detection(void){
 	int vecSum = calculateVecSum();
 			
-	if (vecSum < FREE_FALL_THRESHOLD){
+	if(vecSum < FREE_FALL_THRESHOLD){
+		return YES;
+	}
+	
+	return NO;
+}
+
+/* Returns 1 if motion condition met, zero otherwise */
+int ff_motion(void){
+	int vecSum = calculateVecSum();
+	
+	if(abs(vecSum - 1000) > MOTION_THRESHOLD){
 		return YES;
 	}
 	

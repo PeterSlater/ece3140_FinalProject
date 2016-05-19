@@ -15,3 +15,4 @@
 .\objects\free_fall_test.o: LEDS.h
 .\objects\free_fall_test.o: free_fall.h
 .\objects\free_fall_test.o: buttons.h
+.\objects\free_fall_test.o: timer.h

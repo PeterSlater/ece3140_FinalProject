@@ -15,3 +15,4 @@
 .\objects\main.o: LEDS.h
 .\objects\main.o: free_fall.h
 .\objects\main.o: buttons.h
+.\objects\main.o: timer.h
