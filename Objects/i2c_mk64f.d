@@ -1,21 +1,21 @@
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\addon_cmsis\Driver\MK64F\I2C_MK64F.c
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\addon_cmsis\Driver\MK64F\I2C_MK64F.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Driver\Include\Driver_I2C.h
-.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Driver\Include\Driver_Common.h
+.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Driver\Include\Driver_I2C.h
+.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Driver\Include\Driver_Common.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\i2c_mk64f.o: C:\Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE\Device\MK64FN1M0VLL12\RTE_Device.h
-.\objects\i2c_mk64f.o: C:\Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE\RTE_Components.h
+.\objects\i2c_mk64f.o: E:\Users\Peter\Documents\College\ECE 3140\FinalProject\RTE\Device\MK64FN1M0VLL12\RTE_Device.h
+.\objects\i2c_mk64f.o: E:\Users\Peter\Documents\College\ECE 3140\FinalProject\RTE\RTE_Components.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\fsl_device_registers.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/MK64F12.h
-.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm4.h
-.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h
-.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h
-.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h
-.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmSimd.h
-.\objects\i2c_mk64f.o: C:\Users\Jonathan\Desktop\FinalProj\ece3140_FinalProject\RTE\Device\MK64FN1M0VLL12\system_MK64F12.h
+.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm4.h
+.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h
+.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h
+.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h
+.\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmsimd.h
+.\objects\i2c_mk64f.o: E:\Users\Peter\Documents\College\ECE 3140\FinalProject\RTE\Device\MK64FN1M0VLL12\system_MK64F12.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/MK64F12_extension.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/MK64F12.h
 .\objects\i2c_mk64f.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.2.0\platform\devices\MK64F12/include/fsl_bitaccess.h

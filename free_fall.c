@@ -1,33 +1,49 @@
-#include <Board_Accelerometer.h>	// Interface with accelerometer
-#include <Board_Magnetometer.h>		// Interface with magnetometer
+#include <Board_Accelerometer.h>
+#include <Board_Magnetometer.h>
 #include <fsl_debug_console.h>
-#include "Driver_I2C.h"
-#include "Board_Accelerometer.h"
-#include "Board_Magnetometer.h"
-#include "RTE_Components.h"
 #include <board.h>
 #include <math.h>
+
 #include "MK64F12.h"
-#include "utils.h"
 #include "free_fall.h"
 
-ACCELEROMETER_STATE state;
-MAGNETOMETER_STATE mstate;
+/* Expirementally determined free fall detection threshold */
+#define FREE_FALL_THRESHOLD 350
 
-void ff_detection(void){
-	int vecSum;
-	while(1){
-		Accelerometer_GetState(&state);
-		Magnetometer_GetState(&mstate);	
-		vecSum = sqrt(state.x * state.x + state.y * state.y + state.z * state.z);
+static ACCELEROMETER_STATE state;
+static MAGNETOMETER_STATE mstate;
+
+/* Initialized the hardware */
+void ff_initialize(void){
+	hardware_init();
+	Accelerometer_Initialize();
+	Magnetometer_Initialize();
+}
+
+/* Returns 1 if free fall condition met, zero otherwise*/
+int ff_detection(void){
+	int vecSum = calculateVecSum();
 			
-		if (vecSum < 350){
-			debug_printf("Probably Freefall..."); 
-			LEDBlue_On();
-			//if (slow_movement && impact){
-			//	LED_BlinkCray();
-			//}
-			delay();
-		}
+	if (vecSum < FREE_FALL_THRESHOLD){
+		return 1;
 	}
+	
+	return 0;
+}
+
+/* Returns the raw vector sum of the acceleration */
+int ff_raw_data(void){
+	return calculateVecSum();
+}
+
+/* Reads data and calcuates the vector sum of the acceleration */
+static int calculateVecSum(void){
+	int vecSum;
+	
+	Accelerometer_GetState(&state);
+	Magnetometer_GetState(&mstate);
+	
+	vecSum = sqrt(state.x * state.x + state.y * state.y + state.z * state.z);
+	
+	return vecSum;
 }

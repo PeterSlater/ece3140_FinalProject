@@ -10,6 +10,12 @@
 #ifndef RTE_COMPONENTS_H
 #define RTE_COMPONENTS_H
 
+
+/*
+ * Define the Device Header File: 
+ */
+#define CMSIS_device_header "fsl_device_registers.h"
+
 #define RTE_BOARD_SUPPORT_ACCELEROMETER
 #define RTE_DEVICE_CONFIGURATION_FRDM_K64F
 #define RTE_DEVICE_DRIVER_EDMA

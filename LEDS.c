@@ -1,119 +1,44 @@
 #include "MK64F12.h"
 
-/*----------------------------------------------------------------------------
-  Function that initializes LEDs
- *----------------------------------------------------------------------------*/
-void LED_Initialize(void) {
-
-  SIM->SCGC5    |= (1 <<  10) | (1 <<  13);  /* Enable Clock to Port B & E */ 
-  PORTB->PCR[22] = (1 <<  8) ;               /* Pin PTB22 is GPIO */
-  PORTB->PCR[21] = (1 <<  8);                /* Pin PTB21 is GPIO */
-  PORTE->PCR[26] = (1 <<  8);                /* Pin PTE26  is GPIO */
+/* Initialized LED related hardware */
+void LED_initialize(void) {
+  SIM->SCGC5 |= (1 << 10) | (1 << 13);
   
-  PTB->PDOR = (1 << 21 | 1 << 22 );          /* switch Red/Green LED off  */
-  PTB->PDDR = (1 << 21 | 1 << 22 );          /* enable PTB18/19 as Output */
+	PORTB->PCR[22] = 1 << 8;
+  PORTB->PCR[21] = 1 << 8;
+  PORTE->PCR[26] = 1 << 8;
+  
+  PTB->PDOR = (1 << 21) | (1 << 22);
+  PTB->PDDR = (1 << 21) | (1 << 22);
 
-  PTE->PDOR = 1 << 26;            /* switch Blue LED off  */
-  PTE->PDDR = 1 << 26;            /* enable PTD1 as Output */
+  PTE->PDOR = 1 << 26;
+  PTE->PDDR = 1 << 26;
 }
 
-int red_on = 0;
-int blue_on = 0;
 
-/*----------------------------------------------------------------------------
-  Function that toggles red LED
- *----------------------------------------------------------------------------*/
-
-void LEDRed_Toggle (void) {
-  PIT->CHANNEL[0].TCTRL = 1; //Disable timer to make this function atomic
-  if (red_on) {
-		PTB->PSOR   = 1 << 22;   /* Red LED Off*/
-		red_on = 0;
-	} else {
-		PTB->PCOR   = 1 << 22;   /* Red LED On*/
-		red_on = 1;
-	}
-	PIT->CHANNEL[0].TCTRL = 3;
-}
-
-/*----------------------------------------------------------------------------
-  Function that toggles blue LED
- *----------------------------------------------------------------------------*/
-void LEDBlue_Toggle (void) {
-  PIT->CHANNEL[0].TCTRL = 1;
-  if (blue_on) {
-		PTB->PSOR   = 1 << 21;   /* Blue LED Off*/
-		blue_on = 0;
-	} else {
-		PTB->PCOR   = 1 << 21;   /* Blue LED On*/
-		blue_on = 1;
-	}
-	PIT->CHANNEL[0].TCTRL = 3;
-}
-
-/*----------------------------------------------------------------------------
-  Function that turns on Red LED & all the others off
- *----------------------------------------------------------------------------*/
+/* Turns on red LED */
 void LEDRed_On (void) {
-  PIT->CHANNEL[0].TCTRL = 1;
-  PTB->PCOR   = 1 << 22;   /* Red LED On*/
-  PTB->PSOR   = 1 << 21;   /* Blue LED Off*/
-  PTE->PSOR   = 1 << 26;   /* Green LED Off*/
-  red_on      = 1;
-  PIT->CHANNEL[0].TCTRL = 3;
-  
+  PTB->PCOR   = 1 << 22;
 }
 
-/*----------------------------------------------------------------------------
-  Function that turns on Green LED & all the others off
- *----------------------------------------------------------------------------*/
+/* Turns on green LED */
 void LEDGreen_On (void) {
-  PIT->CHANNEL[0].TCTRL = 1;
-  PTB->PSOR   = 1 << 21;   /* Blue LED Off*/
-  PTE->PCOR   = 1 << 26;   /* Green LED On*/
-  PTB->PSOR   = 1 << 22;   /* Red LED Off*/
-  PIT->CHANNEL[0].TCTRL = 3;
+  PTE->PCOR   = 1 << 26;
 }
 
-/*----------------------------------------------------------------------------
-  Function that turns on Blue LED & all the others off
- *----------------------------------------------------------------------------*/
+/* Turns on blue LED */
 void LEDBlue_On (void) {
-  PIT->CHANNEL[0].TCTRL = 1;
-  PTE->PSOR   = 1 << 26;   /* Green LED Off*/
-  PTB->PSOR   = 1 << 22;   /* Red LED Off*/
-  PTB->PCOR   = 1 << 21;   /* Blue LED On*/
-  blue_on     = 1;
-  PIT->CHANNEL[0].TCTRL = 3;
+  PTB->PCOR   = 1 << 21;
 }
 
-/*----------------------------------------------------------------------------
-  Function that turns all LEDs off
- *----------------------------------------------------------------------------*/
+/* Turn off all LEDs */
 void LED_Off (void) {
-  PIT->CHANNEL[0].TCTRL = 1;
-  PTB->PSOR   = 1 << 22;   /* Green LED Off*/
-  PTB->PSOR   = 1 << 21;     /* Red LED Off*/
-  PTE->PSOR   = 1 << 26;    /* Blue LED Off*/
-  PIT->CHANNEL[0].TCTRL = 3;
+  PTB->PSOR   = 1 << 22;
+  PTB->PSOR   = 1 << 21;
+  PTE->PSOR   = 1 << 26;
 }
 
 void delay(void){
 	int j;
-	for(j=0; j<1500000; j++);
-}
-
-/*----------------------------------------------------------------------------
-  Function that turns all LEDs on and blinks, to be 
- *----------------------------------------------------------------------------*/
-void LED_BlinkCray(void){
-		while(1){
-			PIT->CHANNEL[0].TCTRL = 1;
-			PTB->PCOR   = 1 << 22;   /* Green LED On*/
-			PTB->PCOR   = 1 << 21;     /* Red LED On*/
-			PTE->PCOR   = 1 << 26;    /* Blue LED On*/
-			PIT->CHANNEL[0].TCTRL = 3;
-			delay();
-			LED_Off();
-			}
+	for(j=0; j<10000000; j++);
 }
