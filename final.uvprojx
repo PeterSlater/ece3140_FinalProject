@@ -421,6 +421,41 @@
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
             </File>
+            <File>
+              <FileName>MK64F12.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\MK64F12.h</FilePath>
+            </File>
+            <File>
+              <FileName>free_fall.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\free_fall.h</FilePath>
+            </File>
+            <File>
+              <FileName>free_fall.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\free_fall.c</FilePath>
+            </File>
+            <File>
+              <FileName>buttons.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\buttons.c</FilePath>
+            </File>
+            <File>
+              <FileName>buttons.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\buttons.h</FilePath>
+            </File>
+            <File>
+              <FileName>LEDS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\LEDS.c</FilePath>
+            </File>
+            <File>
+              <FileName>LEDS.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\LEDS.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
