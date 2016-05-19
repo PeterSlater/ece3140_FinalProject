@@ -10,6 +10,9 @@
 /* Expirementally determined free fall detection threshold */
 #define FREE_FALL_THRESHOLD 350
 
+const int YES = 1;
+const int NO = 0;
+
 static ACCELEROMETER_STATE state;
 static MAGNETOMETER_STATE mstate;
 
@@ -25,10 +28,10 @@ int ff_detection(void){
 	int vecSum = calculateVecSum();
 			
 	if (vecSum < FREE_FALL_THRESHOLD){
-		return 1;
+		return YES;
 	}
 	
-	return 0;
+	return NO;
 }
 
 /* Returns the raw vector sum of the acceleration */

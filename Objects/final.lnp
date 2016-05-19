@@ -2,7 +2,7 @@
 ".\objects\free_fall.o"
 ".\objects\buttons.o"
 ".\objects\leds.o"
-".\objects\led_test.o"
+".\objects\main.o"
 ".\objects\fxos8700.o"
 "C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib"
 ".\objects\i2c_mk64f.o"
